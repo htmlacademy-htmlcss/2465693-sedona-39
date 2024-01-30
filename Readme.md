@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Вячеслав Уминов](https://up.htmlacademy.ru/htmlcss/39/user/2465693).
-* Наставник: `Неизвестно`.
+- Студент: [Вячеслав Уминов](https://up.htmlacademy.ru/htmlcss/39/user/2465693).
+- Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
