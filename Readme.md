@@ -2,7 +2,7 @@
 
 - Студент: [Вячеслав Уминов](https://up.htmlacademy.ru/htmlcss/39/user/2465693).
 - Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
-- Сайт: [Мой проект Седона](https://github.com/VslavV/2465693-sedona-39).
+- Сайт: [Мой проект Седона](https://vslavv.github.io/2465693-sedona-39/).
 
 ---
 
