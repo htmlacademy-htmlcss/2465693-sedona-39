@@ -61,7 +61,9 @@ body {
 .hero {
   background-image: url("../images/background-image-main.jpg");
   background-size: cover;
+  background-color: #343ecf;
   background-repeat: no-repeat;
+
 }
 
 .slogan {
