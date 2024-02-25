@@ -30,7 +30,7 @@
               <a class="navigation-link navigation-link-current" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
@@ -43,7 +43,7 @@
           </ul>
         </nav>
         <!--Переход по ссылке Я хочу! переходит на главную страницу со скролингом к якорю установленному на секции поиск гостиницы -->
-        <a class="navigation-user-link button" href="index.html#search">Хочу сюда!</a>
+        <a class="navigation-button button" href="index.html#search">Хочу сюда!</a>
       </header>
       <main class="main-inner main-container" data-test="main">
         <div class="wrap">
@@ -120,15 +120,15 @@
               </fieldset>
               <!--кнопка с типом submit выполняет выборку по заданным критериям, с типом reset выполняет сброс на параметры по умолчанию-->
               <div class="filter-submit-button">
-                <button class="button button-submit" type="submit">Применить</button>
-                <button class="button no-border" type="reset">Сбросить</button>
+                <button class="button button-submit button-filter" type="submit">Применить</button>
+                <button class="button no-border button-filter" type="reset">Сбросить</button>
               </div>
             </form>
           </section>
         </div>
         <section class="catalog" data-test="catalog">
           <div class="title-sort-view">
-            <h2 class="catalog-title title-dark">Найдено гостиниц: <span class="find-hotels-result">38</span></h2>
+            <h2 class="title catalog-title title-dark">Найдено гостиниц: <span class="find-hotels-result">38</span></h2>
             <!--блок сортировки -->
             <select class="select-control" aria-label="Сортировка">
               <option value="low-cost">Сначала дешевые</option>
@@ -137,15 +137,15 @@
             </select>
             <!--блок выбора отображения результата поиска (список, карточки, подробно). Исполнение кнопкой, т.к. переход на другую страницу не выполняется, смена вида выполняется на JS-->
             <ul class="catalog-view-buttons">
-              <li class="catalog-view-item">
+              <li class="catalog-view-item catalog-view-item-current">
                 <button class="catalog-view-button-grid active" type="button"><span class="visually-hidden">Показать
                     карточки</span></button>
               </li>
-              <li>
+              <li class="catalog-view-item">
                 <button class="catalog-view-button-detail active" type="button"><span class="visually-hidden">Показать
                     подробно</span></button>
               </li>
-              <li>
+              <li class="catalog-view-item">
                 <button class="catalog-view-button-list active" type="button"><span class="visually-hidden">Показать
                     список</span></button>
               </li>
@@ -258,14 +258,17 @@
           </ul>
         </section>
         <!--секция Подписка на рассылку-->
-        <section class="subscribe-catalog" data-test="subscribe">
-          <h2 class="title title-dark">Подпишитесь на рассылку</h2>
-          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscribe" data-test="subscribe">
+          <div class="subscribe-wrap">
+            <h2 class="title subscribe-title title-dark">Подпишитесь на рассылку</h2>
+            <p class="description subscribe-description">Только полезная информация и никакого спама, честное
+              бойскаутское!</p>
+          </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="e-mail">Введите e-mail</label>
             <input class="subscribe-field" id="e-mail" placeholder="Ваш e-mail" type="email" name="subscribe-field"
               required>
-            <p><button class="subscribe-button" type="submit">Подписаться</button></p>
+            <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

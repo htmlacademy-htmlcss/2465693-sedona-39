@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <!--Переход по ссылке Я хочу! скролит к якорю установленному на секции поиск гостиницы -->
-        <a class="navigation-user-link button" href="#search">Хочу сюда!</a>
+        <a class="navigation-button button" href="#search">Хочу сюда!</a>
       </header>
       <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
@@ -52,30 +52,39 @@
         <!--секция Преимущества -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-wrap">
+            <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="advantages-list">
-            <li class="advantages-photo">
-              <h3 class="advantages-title">Настоящий городок</h3>
-              <p class="advantages-description-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <li class="advantages-item  advantages-photo">
+              <div class="advanteges-text-block">
+                <h3 class="advantages-title">Настоящий городок</h3>
+                <p class="advantages-description advantages-description-light">Седона — не аттракцион для туристов, там
+                  течёт своя жизнь Седона
+                </p>
+              </div>
               <img class="advantages-img" src="images/advantage-sedona.jpg" width="800" height="385"
                 alt="Дома на фоне гор">
             </li>
-            <li class="advantages-item item-light">
+            <li class="advantages-item">
               <h3 class="advantages-title title-dark">Небольшая площадь</h3>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item item-dark">
+            <li class="advantages-item">
               <h3 class="advantages-title title-dark">Красивая дорога</h3>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages-item item-light">
+            <li class="advantages-item">
               <h3 class="advantages-title title-dark">Мало туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages-photo">
-              <h3 class="advantages-title">Там есть мост дьявола</h3>
-              <p class="advantages-description-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <li class="advantages-item advantages-photo">
+              <div class="advanteges-text-block">
+                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <p class="advantages-description advantages-description-light">Да, по нему можно пройти! Если вы
+                  осмелитесь, разумеется</p>
+              </div>
               <img class="advantages-img" src="images/advantage-stone-bridge.jpg" width="800" height="385"
                 alt="Арочный мост из камней, созданный природой">
             </li>
@@ -83,10 +92,12 @@
         </section>
         <!--секция Сервис-->
         <section class="service">
-          <h2 class="service-title title-dark">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="description">Опытный персонал и качественное обслуживание!</p>
+          <div class="service-wrap">
+            <h2 class="title service-title title-dark">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="service-list">
-            <li class="service-item item-light">
+            <li class="service-item">
               <h3 class="service-item-title title-dark">Жильё</h3>
               <p class="service-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
@@ -94,7 +105,7 @@
               <h3 class="service-item-title title-dark">Еда</h3>
               <p class="service-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="service-item item-light">
+            <li class="service-item">
               <h3 class="service-item-title title-dark">Сувениры</h3>
               <p class="service-item-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -102,21 +113,25 @@
         </section>
         <!--секция Поиск гостиницы-->
         <section class="search-hotel" id="search" data-test="search">
-          <h2 class="title title-dark">Заинтересовались?</h2>
-          <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          <h2 class="title search-title title-dark">Заинтересовались?</h2>
+          <p class="description search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения
             гостиниц в Седоне</p>
           <!--вызывает модальное окно-->
           <a class="search-hotel-button button" href="#">поиск гостиницы в Седоне</a>
         </section>
         <!--секция Подписка на рассылку-->
-        <section class="subscribe" data-test="subscribe">
-          <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscribe subscribe-main" data-test="subscribe">
+          <div class="subscribe-wrap">
+            <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="description subscribe-description">Только полезная информация и никакого спама, честное
+              бойскаутское!</p>
+          </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="e-mail">Введите e-mail</label>
             <input class="subscribe-field" id="e-mail" placeholder="Ваш e-mail" type="email" name="subscribe-field"
               required>
-            <p><button class="subscribe-button" type="submit">Подписаться</button></p>
+            <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
