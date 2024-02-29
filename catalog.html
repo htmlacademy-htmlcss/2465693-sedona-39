@@ -111,17 +111,19 @@
                 </ul>
               </fieldset>
               <!--фильтр по стоимости не размечен, т.к. будет рассматриваться в будующих разделах-->
-              <fieldset class="catalog-price-filter">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="visually-hidden" for="begin">От</label>
-                <input class="begin-price price" id="begin" placeholder="от" type="text" name="begin-price" required>
-                <label class="visually-hidden" for="end">До</label>
-                <input class="end-price price" id="end" placeholder="до" type="text" name="end-price" required>
-              </fieldset>
-              <!--кнопка с типом submit выполняет выборку по заданным критериям, с типом reset выполняет сброс на параметры по умолчанию-->
-              <div class="filter-submit-button">
-                <button class="button button-submit button-filter" type="submit">Применить</button>
-                <button class="button no-border button-filter" type="reset">Сбросить</button>
+              <div class="price-button">
+                <fieldset class="catalog-price-filter">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <label class="visually-hidden" for="begin">От</label>
+                  <input class="begin-price price" id="begin" placeholder="от" type="text" name="begin-price" required>
+                  <label class="visually-hidden" for="end">До</label>
+                  <input class="end-price price" id="end" placeholder="до" type="text" name="end-price" required>
+                </fieldset>
+                <!--кнопка с типом submit выполняет выборку по заданным критериям, с типом reset выполняет сброс на параметры по умолчанию-->
+                <div class="filter-submit-button">
+                  <button class="button button-submit button-filter" type="submit">Применить</button>
+                  <button class="button no-border button-filter" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </section>
@@ -137,16 +139,16 @@
             </select>
             <!--блок выбора отображения результата поиска (список, карточки, подробно). Исполнение кнопкой, т.к. переход на другую страницу не выполняется, смена вида выполняется на JS-->
             <ul class="catalog-view-buttons">
-              <li class="catalog-view-item catalog-view-item-current">
-                <button class="catalog-view-button-grid active" type="button"><span class="visually-hidden">Показать
+              <li class="catalog-view-item catalog-view-current">
+                <button class="catalog-view-button button-grid" type="button"><span class="visually-hidden">Показать
                     карточки</span></button>
               </li>
               <li class="catalog-view-item">
-                <button class="catalog-view-button-detail active" type="button"><span class="visually-hidden">Показать
+                <button class="catalog-view-button button-detail" type="button"><span class="visually-hidden">Показать
                     подробно</span></button>
               </li>
               <li class="catalog-view-item">
-                <button class="catalog-view-button-list active" type="button"><span class="visually-hidden">Показать
+                <button class="catalog-view-button button-list" type="button"><span class="visually-hidden">Показать
                     список</span></button>
               </li>
             </ul>
@@ -157,22 +159,22 @@
               <a class="hotel-link" href="#" tabindex="-1">
                 <img class="hotel-card-img" src="images/card-amara.jpg" width="300" height="212"
                   alt="Вид из пещеры на звездное небо">
-                <h3 class="hotel-card-title title-dark">Amara Resort & Spa</h3>
+                <h3 class="hotel-card-title title-dark">Amara Resort & SpaAmara</h3>
               </a>
               <p class="hotel-card-description">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 4000 ₽</span>
               </p>
               <!--ссылка выполняет переход на гостиницу с подробным описанием и фото-->
-              <a class="hotel-about-link button" href="#">Подробнее</a>
+              <a class="hotel-about-link button small-btn" href="#">Подробнее</a>
               <!--кнопка добавлет в избранное, переход не выполняется, обработка в JS-->
-              <button class="fav-button button-submit button">В избранное</button>
-              <div class="star" role="img" aria-label="4 звезды">
-                <span class="visually-hidden">Количество звезд</span>
+              <button class="fav-button button-submit button small-btn">В избранное</button>
+              <div class="raiting-wrap">
+                <div class="star" role="img" aria-label="4 звезды">
+                  <span class="visually-hidden">Количество звезд</span>
+                </div>
+                <p class="hotel-raiting small-btn">Рейтинг:8,5</p>
               </div>
-              <p class="hotel-raiting">
-                Рейтинг:<span class="hotel-card-rating-value">8,5</span>
-              </p>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#" tabindex="-1">
@@ -184,14 +186,14 @@
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 5000 ₽</span>
               </p>
-              <a class="hotel-about-link  button" href="#">Подробнее</a>
-              <button class="fav-button fav-button-click button">В избранном</button>
-              <div class="star" role="img" aria-label="4 звезды">
-                <span class="visually-hidden">Количество звезд</span>
+              <a class="hotel-about-link button small-btn" href="#">Подробнее</a>
+              <button class="fav-button fav-button-click button small-btn">В избранном</button>
+              <div class="raiting-wrap">
+                <div class="star" role="img" aria-label="4 звезды">
+                  <span class="visually-hidden">Количество звезд</span>
+                </div>
+                <p class="hotel-raiting small-btn">Рейтинг:9,2</p>
               </div>
-              <p class="hotel-raiting">
-                Рейтинг:<span class="hotel-card-rating-value">9,2</span>
-              </p>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#" tabindex="-1">
@@ -203,14 +205,14 @@
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 2500 ₽</span>
               </p>
-              <a class="hotel-about-link  button" href="#">Подробнее</a>
-              <button class="fav-button button-submit button">В избранное</button>
-              <div class="star" role="img" aria-label="3 звезды">
-                <span class="visually-hidden">Количество звезд</span>
+              <a class="hotel-about-link  button small-btn" href="#">Подробнее</a>
+              <button class="fav-button button-submit button small-btn">В избранное</button>
+              <div class="raiting-wrap">
+                <div class="star" role="img" aria-label="3 звезды">
+                  <span class="visually-hidden">Количество звезд</span>
+                </div>
+                <p class="hotel-raiting small-btn">Рейтинг:6,9</p>
               </div>
-              <p class="hotel-raiting">
-                Рейтинг:<span class="hotel-card-rating-value">6,9</span>
-              </p>
             </li>
             <li class="hotel-item">
               <a class="hotel-link" href="#" tabindex="-1">
@@ -219,20 +221,17 @@
                 <h3 class="hotel-card-title title-dark">GreenTree Inn</h3>
               </a>
               <p class="hotel-card-description">
-                Рейтинг:<span class="hotel-card-rating-value">6,9</span>
-              </p>
-              <p class="hotel-card-description">
                 <span class="hotel-card-type">Гостиница</span>
                 <span class="hotel-card-price">От 1500 ₽</span>
               </p>
-              <a class="hotel-about-link button" href="#">Подробнее</a>
-              <button class="fav-button button-submit button">В избранное</button>
-              <div class="star" role="img" aria-label="2 звезды">
-                <span class="visually-hidden">Количество звезд</span>
+              <a class="hotel-about-link button small-btn" href="#">Подробнее</a>
+              <button class="fav-button button-submit button small-btn">В избранное</button>
+              <div class="raiting-wrap">
+                <div class="star" role="img" aria-label="2 звезды">
+                  <span class="visually-hidden">Количество звезд</span>
+                </div>
+                <p class="hotel-raiting small-btn">Рейтинг:5,0</p>
               </div>
-              <p class="hotel-raiting">
-                Рейтинг:<span class="hotel-card-rating-value">5,0</span>
-              </p>
             </li>
           </ul>
           <!--блок пагинации-->
@@ -272,7 +271,7 @@
           </form>
         </section>
       </main>
-      <footer data-test="footer">
+      <footer class="page-footer" data-test="footer">
         <!--секция мы в социальных сетях-->
         <div class="footer-wrapper">
           <ul class="social-list">
