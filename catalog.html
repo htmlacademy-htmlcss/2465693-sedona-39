@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="images/icons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -54,7 +54,6 @@
             </li>
           </ul>
         </nav>
-        <!--Переход по ссылке Я хочу! переходит на главную страницу со скролингом к якорю установленному на секции поиск гостиницы -->
         <div class="navigation-button-wrap">
           <a class="navigation-button button" href="#">Хочу сюда!</a>
         </div>
@@ -70,7 +69,7 @@
                     class="visually-hidden">Главная</span></a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
+                <a class="breadcrumbs-link" aria-current="page" href="#">Гостиницы</a>
               </li>
             </ol>
           </header>
@@ -83,20 +82,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="basin" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="basin" checked>
+                      <span class="control-mark mark-checkbox"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark mark-checkbox"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark mark-checkbox"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -106,32 +108,47 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="guesthouse" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="guesthouse"
+                        checked>
+                      <span class="control-mark mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="hotel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="hotel">
+                      <span class="control-mark mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="apartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="apartments">
+                      <span class="control-mark mark-radio"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <!--фильтр по стоимости не размечен, т.к. будет рассматриваться в будующих разделах-->
-              <div class="price-button">
+              <div class="price-filter">
                 <fieldset class="catalog-price-filter">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="visually-hidden" for="begin">От</label>
-                  <input class="begin-price price" id="begin" placeholder="от" type="text" name="begin-price" required>
-                  <label class="visually-hidden" for="end">До</label>
-                  <input class="end-price price" id="end" placeholder="до" type="text" name="end-price" required>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="label-min label" for="min-price">от</label>
+                      <input class="range-input min-price field" type="number" value="0" id="min-price"
+                        name="min-price">
+                      <label class="label-max label" for="max-price">до</label>
+                      <input class="range-input max-price field" type="number" value="9000" id="max-price"
+                        name="max-price">
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button type="button" class="range-toogle toogle-min"></button>
+                        <button type="button" class="range-toogle toogle-max"></button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <!--кнопка с типом submit выполняет выборку по заданным критериям, с типом reset выполняет сброс на параметры по умолчанию-->
                 <div class="filter-submit-button">
@@ -278,12 +295,12 @@
         <section class="subscribe" data-test="subscribe">
           <div class="subscribe-wrap">
             <h2 class="title subscribe-title title-dark">Подпишитесь на рассылку</h2>
-            <p class="description subscribe-description">Только полезная информация и никакого спама, честное
-              бойскаутское!</p>
+            <p class="description subscribe-description">Только полезная информация и никакого спама,
+              честное&nbsp;бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="e-mail">Введите e-mail</label>
-              <input class="subscribe-field" id="e-mail" placeholder="Ваш e-mail" type="email" name="subscribe-field"
-                required>
+              <input class="subscribe-field field" id="e-mail" placeholder="Ваш e-mail" type="email"
+                name="subscribe-field" required>
               <button class="subscribe-button button" type="submit">Подписаться</button>
             </form>
           </div>
