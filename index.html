@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="img/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Городок Седона</title>
@@ -13,8 +14,8 @@
     <div class="page">
       <header class="page-header" data-test="header">
         <a class="header-logo" href="index.html" aria-current="page">
-          <img class="page-header-logo" src="images/logotype-sedona.svg" width="140" height="70"
-            alt="Логотип города Седона">
+          <img class="page-header-logo normalize-img" src="images/logotype-sedona.svg" width="140" height="70"
+            alt="Логотип города Седона.">
         </a>
         <!--блок навигации-->
         <nav class="navigation">
@@ -59,14 +60,14 @@
       <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона - город на севере Аризоны</h1>
-          <img class="hero-img" src="images/welcome.svg" width="458" height="352"
-            alt="надпись Welcome to the gorgeous Sedona, because the Grand Canyon sucks! на фоне гор">
+          <img class="hero-img normalize-img" src="images/welcome.svg" width="458" height="352"
+            alt="надпись Welcome to the gorgeous Sedona, because the Grand Canyon sucks! на фоне гор.">
         </section>
         <!--секция Преимущества -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-wrap">
-            <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
             <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="advantages-list">
@@ -76,8 +77,8 @@
                 <p class="advantages-description advantages-description-light">Седона — не аттракцион для туристов, там
                   течёт своя жизнь</p>
               </div>
-              <img class="advantages-img" src="images/advantage-sedona.jpg" width="800" height="385"
-                alt="Дома на фоне гор">
+              <img class="advantages-img normalize-img" src="images/advantage-sedona.jpg" width="800" height="385"
+                alt="Дома на фоне гор.">
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title title-dark decor-title">Небольшая площадь</h3>
@@ -91,29 +92,26 @@
               <h3 class="advantages-title title-dark decor-title">Мало туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages-item advantages-photo">
+            <li class="advantages-item advantages-photo advantages-expanded">
               <div class="advantages-text-block">
                 <h3 class="advantages-title decor-title">Там есть мост&nbsp;дьявола</h3>
                 <p class="advantages-description advantages-description-light">Да, по&nbsp;нему можно пройти! Если
                   вы&nbsp;осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-img" src="images/advantage-stone-bridge.jpg" width="800" height="385"
-                alt="Арочный мост из камней, созданный природой">
+              <img class="advantages-img normalize-img" src="images/advantage-stone-bridge.jpg" width="800" height="385"
+                alt="Арочный мост из камней, созданный природой.">
             </li>
           </ul>
         </section>
         <!--секция Сервис-->
-        <section class="service">
-          <div class="service-wrap">
-            <h2 class="title service-title title-dark">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="description">Опытный персонал и качественное обслуживание!</p>
-          </div>
+        <section class="service" data-test="service">
+          <h2 class="title service-title title-dark">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+          <p class="service-description description">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
             <li class="service-item">
               <h3 class="service-item-title title-dark service-title-home service-icon">Жильё</h3>
               <p class="service-item-description">Рекомендуем пожить в&nbsp;настоящем&nbsp;мотеле, всё&nbsp;как&nbsp;в
-                кино!
-              </p>
+                кино!</p>
             </li>
             <li class="service-item">
               <h3 class="service-item-title title-dark service-title-food service-icon">Еда</h3>
@@ -130,8 +128,8 @@
         <!--секция Поиск гостиницы-->
         <section class="search-hotel" data-test="search">
           <h2 class="title search-title title-dark">Заинтересовались?</h2>
-          <p class="description search-description">Укажите предполагаемые даты поездки,
-            и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+          <p class="description search-description">Укажите предполагаемые даты
+            поездки,<br>и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
           <!--вызывает модальное окно-->
           <button class="search-hotel-button button" type="button">поиск гостиницы в Седоне</button>
         </section>
@@ -141,13 +139,13 @@
             <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
             <p class="description subscribe-description">Только полезная информация и никакого спама,
               честное&nbsp;бойскаутское!</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="e-mail">Введите e-mail</label>
-              <input class="subscribe-field field" id="e-mail" placeholder="Ваш e-mail" type="email"
-                name="subscribe-field" required>
-              <button class="subscribe-button button" type="submit">Подписаться</button>
-            </form>
           </div>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="e-mail">Введите e-mail</label>
+            <input class="subscribe-field field" id="e-mail" placeholder="Ваш e-mail" type="email"
+              name="subscribe-field" required>
+            <button class="subscribe-button button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <!-- Footer -->

@@ -13,8 +13,8 @@
     <div class="page">
       <header class="page-header" data-test="header">
         <a class="header-logo" href="index.html" aria-current="page">
-          <img class="page-header-logo" src="images/logotype-sedona.svg" width="140" height="70"
-            alt="Логотип города Седона">
+          <img class="page-header-logo normalize-img" src="images/logotype-sedona.svg" width="140" height="70"
+            alt="Логотип города Седона.">
         </a>
         <!--блок навигации-->
         <nav class="navigation">
@@ -59,25 +59,25 @@
       <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона - город на севере Аризоны</h1>
-          <img class="hero-img" src="images/welcome.svg" width="458" height="352"
-            alt="надпись Welcome to the gorgeous Sedona, because the Grand Canyon sucks! на фоне гор">
+          <img class="hero-img normalize-img" src="images/welcome.svg" width="458" height="352"
+            alt="надпись Welcome to the gorgeous Sedona, because the Grand Canyon sucks! на фоне гор.">
         </section>
         <!--секция Преимущества -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-wrap">
-            <p class="slogan">Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</p>
+            <p class="slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
             <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="advantages-list">
             <li class="advantages-item  advantages-photo">
               <div class="advantages-text-block">
                 <h3 class="advantages-title decor-title">Настоящий городок</h3>
-                <p class="advantages-description advantages-description-light">Седона не аттракцион для туристов, там
+                <p class="advantages-description advantages-description-light">Седона — не аттракцион для туристов, там
                   течёт своя жизнь</p>
               </div>
-              <img class="advantages-img" src="images/advantage-sedona.jpg" width="800" height="385"
-                alt="Дома на фоне гор">
+              <img class="advantages-img normalize-img" src="images/advantage-sedona.jpg" width="800" height="385"
+                alt="Дома на фоне гор.">
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title title-dark decor-title">Небольшая площадь</h3>
@@ -91,29 +91,28 @@
               <h3 class="advantages-title title-dark decor-title">Мало туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages-item advantages-photo">
+            <li class="advantages-item advantages-photo advantages-expanded">
               <div class="advantages-text-block">
-                <h3 class="advantages-title decor-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title decor-title">Там есть мост&nbsp;дьявола</h3>
                 <p class="advantages-description advantages-description-light">Да, по&nbsp;нему можно пройти! Если
                   вы&nbsp;осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-img" src="images/advantage-stone-bridge.jpg" width="800" height="385"
-                alt="Арочный мост из камней, созданный природой">
+              <img class="advantages-img normalize-img" src="images/advantage-stone-bridge.jpg" width="800" height="385"
+                alt="Арочный мост из камней, созданный природой.">
             </li>
           </ul>
         </section>
         <!--секция Сервис-->
-        <section class="service">
+        <section class="service" data-test="service">
           <div class="service-wrap">
-            <h2 class="title service-title title-dark">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <h2 class="title service-title title-dark">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
             <p class="description">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="service-list">
             <li class="service-item">
               <h3 class="service-item-title title-dark service-title-home service-icon">Жильё</h3>
               <p class="service-item-description">Рекомендуем пожить в&nbsp;настоящем&nbsp;мотеле, всё&nbsp;как&nbsp;в
-                кино!
-              </p>
+                кино!</p>
             </li>
             <li class="service-item">
               <h3 class="service-item-title title-dark service-title-food service-icon">Еда</h3>
@@ -130,24 +129,24 @@
         <!--секция Поиск гостиницы-->
         <section class="search-hotel" data-test="search">
           <h2 class="title search-title title-dark">Заинтересовались?</h2>
-          <p class="description search-description">Укажите предполагаемые даты поездки,
-            и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+          <p class="description search-description">Укажите предполагаемые даты
+            поездки,<br>и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
           <!--вызывает модальное окно-->
-          <a class="search-hotel-button button" href="#">поиск гостиницы в Седоне</a>
+          <button class="search-hotel-button button" type="button">поиск гостиницы в Седоне</button>
         </section>
         <!--секция Подписка на рассылку-->
         <section class="subscribe subscribe-main" data-test="subscribe">
           <div class="subscribe-wrap">
             <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="description subscribe-description">Только полезная информация и никакого спама, честное
-              бойскаутское!</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="e-mail">Введите e-mail</label>
-              <input class="subscribe-field field" id="e-mail" placeholder="Ваш e-mail" type="email"
-                name="subscribe-field" required>
-              <button class="subscribe-button button" type="submit">Подписаться</button>
-            </form>
+            <p class="description subscribe-description">Только полезная информация и никакого спама,
+              честное&nbsp;бойскаутское!</p>
           </div>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="e-mail">Введите e-mail</label>
+            <input class="subscribe-field field" id="e-mail" placeholder="Ваш e-mail" type="email"
+              name="subscribe-field" required>
+            <button class="subscribe-button button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <!-- Footer -->
@@ -221,8 +220,9 @@
         </div>
       </footer>
     </div>
+    <!-- Модальное окно -->
     <div class="modal-container">
-      <div class="modal">
+      <div class="modal" data-test="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg class="btn-close" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
@@ -236,13 +236,13 @@
             <p class="date-grid arrival-wrap">
               <label class="label-wrap" for="arrival">Дата заезда:</label>
               <input class="date-field modal-inp" type="text" name="arrival-date" id="arrival" value="27 апреля 2020"
-                placeholder="Укажите дату">
+                placeholder="Укажите дату" required="">
               <span class="hint hint-warning">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="date-grid departure-wrap">
               <label class="label-wrap" for="departure">Дата выезда:</label>
               <input class="date-field modal-inp" type="text" name="departure-date" id="departure"
-                value="1 сентября 2023" placeholder="Укажите дату">
+                value="1 сентября 2023" placeholder="Укажите дату" required="">
               <span class="hint">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <ul class="counts-items">
@@ -254,6 +254,7 @@
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
+                    <span class="visually-hidden">Уменьшить на одного.</span>
                   </button>
                   <input class="counter modal-inp" type="number" id="adult-count" name="adult-count" value="2" min="1"
                     max="99" placeholder="1" required="">
@@ -262,6 +263,7 @@
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                     </svg>
+                    <span class="visually-hidden">Увеличить на одного.</span>
                   </button>
                 </div>
               </li>
@@ -270,16 +272,16 @@
                   <label class="label-wrap count-block-label" for="children-count">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      <svg class="icon-info" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" fill="#fff" />
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
                       будут с&nbsp;вами, возраст которых от&nbsp;6 до&nbsp;18 лет. Дети до&nbsp;6 лет размещаются
                       бесплатно.</span>
                   </span>
+                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
                 </span>
                 <div class="btn-wrap">
                   <button class="minus btn-counter" type="button">
@@ -287,6 +289,7 @@
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
+                    <span class="visually-hidden">Уменьшить на одного.</span>
                   </button>
                   <input class="counter modal-inp" type="number" id="children-count" name="children-count" min="0"
                     max="99" value="2" placeholder="0" required="">
@@ -295,6 +298,7 @@
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                     </svg>
+                    <span class="visually-hidden">Увеличить на одного.</span>
                   </button>
                 </div>
               </li>
