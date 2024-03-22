@@ -970,10 +970,6 @@ body {
   cursor: pointer;
 }
 
-.range-toogle:not(:disabled):hover{
-  opacity: 0.6;
-}
-
 .range-toogle:not(:disabled):active {
   border: 2px solid #83b3d3;
 }
