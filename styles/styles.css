@@ -518,6 +518,7 @@ img {
 
 .search-hotel-button:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 /*блок рассылки*/
@@ -607,6 +608,7 @@ img {
 
 .subscribe-button:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 /* Footer */
@@ -889,6 +891,7 @@ img {
 .control input[type="checkbox"]:disabled + .control-label,
 .control input[type="radio"]:disabled + .control-label {
   opacity: 0.3;
+  cursor: default;
 }
 
 .price-filter {
@@ -1050,6 +1053,7 @@ img {
 
 .btn-reset:disabled {
   opacity: 0.1;
+  cursor: default;
 }
 
 /* Каталог */
@@ -1093,6 +1097,7 @@ img {
 .select-control:disabled {
   border: 2px solid #000000;
   opacity: 0.3;
+  cursor: default;
 }
 
 .catalog {
@@ -1283,6 +1288,7 @@ img {
 
 .blue-btn:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 .fav-button-click {
@@ -1302,6 +1308,7 @@ img {
 
 .fav-button-click:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 .raiting-wrap {
