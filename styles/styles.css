@@ -175,7 +175,7 @@ img {
 .navigation-icon {
   position: absolute;
   top: 0;
-  right: -1px;
+  right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -265,9 +265,9 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  padding: 70px 70px;
+  padding: 69px 70px;
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .slogan {
@@ -384,12 +384,6 @@ img {
   color: #000000;
 }
 
-/*блок сервис*/
-/* .service {
-
-  text-align: center;
-} */
-
 .service-wrap{
   display: flex;
   flex-direction: column;
@@ -415,7 +409,6 @@ img {
 .service-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -425,7 +418,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 400px;
   min-height: 385px;
   padding: 81px 85px;
@@ -523,7 +516,7 @@ img {
 
 /*блок рассылки*/
 .subscribe {
-  padding: 95px 70px 105px 70px;
+  padding: 96px 70px 104px 70px;
 }
 
 .subscribe-wrap {
@@ -801,13 +794,10 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .catalog-filter-item {
   margin-bottom: 16px;
-  margin-top: 10px;
 }
 
 .catalog-filter-item:not(:nth-last-child()) {
@@ -824,29 +814,27 @@ img {
 
 .control {
   position: relative;
-  display: flex;
-  gap: 16px;
-  align-items: center;
   line-height: 23px;
 }
 
 .control-input{
+  position: absolute;
   -webkit-appearance: none;
           appearance: none;
   display: inline-block;
-  flex-shrink: 0;
   margin: 0;
+  margin-right: 16px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .control-input[type="checkbox"]:checked{
   background-image: url("../images/icons/checkbox.svg");
   background-size: 13px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .control-input[type="radio"]{
@@ -854,7 +842,7 @@ img {
 }
 
 .control-input[type="radio"]:checked::before{
-  content: '';
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -894,6 +882,12 @@ img {
   cursor: default;
 }
 
+.control-label{
+  display: block;
+  padding-left: 36px;
+  overflow: hidden;
+}
+
 .price-filter {
   display: flex;
   gap: 70px;
@@ -908,7 +902,7 @@ img {
   appearance: none;
 }
 
-.range-input[type='number'] {
+.range-input[type="number"] {
   -webkit-appearance: textfield;
   appearance: textfield;
 }
@@ -951,15 +945,15 @@ img {
 
 .label-min {
   top: 13px;
-  left: 95px;
-  width: 40px;
+  left: 91px;
+  width: 48px;
   text-align: center;
 }
 
 .label-max {
   top: 13px;
-  right: 9px;
-  width: 40px;
+  right: 6px;
+  width: 48px;
   text-align: center;
 }
 
@@ -1065,7 +1059,7 @@ img {
   display: flex;
   column-gap: 70px;
   row-gap: 8px;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   margin-bottom: 39px;
 }
@@ -1084,7 +1078,7 @@ img {
   appearance: none;
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1102,7 +1096,7 @@ img {
 
 .catalog {
   margin: 0 auto;
-  padding-top: 51px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 
@@ -1126,6 +1120,9 @@ img {
 }
 
 .catalog-view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   padding: 0;
@@ -1133,18 +1130,20 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #e5e5e5;
+  box-sizing: border-box;
 }
 
 .catalog-view-current {
   border: 2px solid #000000;
 }
 
-.catalog-view-button:hover {
+.catalog-view-button:hover,
+.catalog-view-button:active {
   border: 2px solid #000000;
 }
 
-.catalog-view-button:active {
-  border: 2px solid #000000;
+.catalog-view-button:focus {
+  border: none;
 }
 
 .button-grid {
@@ -1187,7 +1186,7 @@ img {
 
 .hotel-card-img {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   width: 300px;
   height: 212px;
 }
@@ -1479,6 +1478,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -1608,7 +1608,7 @@ img {
 
 .tooltip-text::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 118px;
   top: -8px;
   border-style: solid;
@@ -1722,7 +1722,7 @@ img {
   appearance: none;
 }
 
-.counter[type='number'] {
+.counter[type="number"] {
   -webkit-appearance: textfield;
   appearance: textfield;
 }
