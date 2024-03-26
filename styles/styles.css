@@ -1256,7 +1256,7 @@ img {
   text-align: right;
 }
 
-.hotel-raiting {
+.rating-value {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -1311,7 +1311,7 @@ img {
   cursor: default;
 }
 
-.raiting-wrap {
+.rating-hotel-card {
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -1488,7 +1488,7 @@ img {
   text-transform: capitalize;
 }
 
-.modal-inp {
+.field-style {
   font-family: inherit;
   font-size: 18px;
   font-style: inherit;
@@ -1498,7 +1498,7 @@ img {
   background-color: #f2f2f2;
 }
 
-.modal-inp::placeholder {
+.field-style::placeholder {
   color: #000000;
   opacity: 0.6;
 }
@@ -1512,11 +1512,11 @@ img {
   background-position: right 22px center;
 }
 
-.modal-inp:not(:disabled):hover {
+.field-style:not(:disabled):hover {
   background-color: #e6e6e6;
 }
 
-.modal-inp:not(:disabled):focus-within {
+.field-style:not(:disabled):focus-within {
   z-index: 1;
   background-color: #e6e6e6;
 }
